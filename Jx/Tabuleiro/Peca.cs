@@ -13,9 +13,9 @@ namespace Jx.tabuleiro
         public Tabuleiro Tab { get; protected set; }
         public int qteMovimentos { get; protected set; }
 
-        public Peca (Posicao posicao, Cor cor, Tabuleiro tab)
+        public Peca ( Cor cor, Tabuleiro tab)
         {
-            Posicao = posicao;
+            Posicao = null;
             Cor = cor;
             Tab = tab;
             qteMovimentos = 0;

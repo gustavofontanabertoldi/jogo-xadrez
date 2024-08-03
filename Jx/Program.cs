@@ -1,5 +1,6 @@
 ﻿using Jx;
 using Jx.tabuleiro;
+using Jx.jogoXad;
 
 internal class Program
 {
@@ -7,7 +8,10 @@ internal class Program
     {
 
         Posicao p;
-        Tabuleiro tab = new Tabuleiro(8, 8); 
+        Tabuleiro tab = new Tabuleiro(8, 8);
+
+
+        tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
 
         Tela.imprimirTabuliro(tab);
 
