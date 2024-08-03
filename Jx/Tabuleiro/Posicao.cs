@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Jx.Tabuleiro
+namespace Jx.tabuleiro
 {
     internal class Posicao
     {

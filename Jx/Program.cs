@@ -1,4 +1,4 @@
-﻿using Jx.Tabuleiro;
+﻿using Jx.tabuleiro;
 
 internal class Program
 {
@@ -6,10 +6,7 @@ internal class Program
     {
 
         Posicao p;
-        p = new Posicao(3, 4);
-
-        Console.WriteLine(p);
-
+        Tabuleiro tab = new Tabuleiro(8, 8); 
 
         
     }
