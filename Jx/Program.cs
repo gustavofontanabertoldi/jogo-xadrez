@@ -6,15 +6,21 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        try
+        {
+            Posicao p;
+            Tabuleiro tab = new Tabuleiro(8, 8);
 
-        Posicao p;
-        Tabuleiro tab = new Tabuleiro(8, 8);
 
+            tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
 
-        tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
+            Tela.imprimirTabuliro(tab);
 
-        Tela.imprimirTabuliro(tab);
-
-        Console.WriteLine(tab);
+            Console.WriteLine(tab);
+        }
+        catch (TabuleiroException e)
+        {
+            Console.WriteLine(e.Message);
+        }
     }
 }
