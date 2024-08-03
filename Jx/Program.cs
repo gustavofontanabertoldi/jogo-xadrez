@@ -8,9 +8,16 @@ internal class Program
     {
         try
         {
-            PosicaoXadrez pos = new PosicaoXadrez('a', 1);
-            Console.WriteLine(pos);
-            Console.WriteLine(pos.ToPosicao());
+            Posicao p;
+            Tabuleiro tab = new Tabuleiro(8, 8);
+
+
+            tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
+            tab.colocarPeca(new Torre(tab, Cor.Branca), new Posicao(1, 4));
+
+            Tela.imprimirTabuliro(tab);
+
+            Console.WriteLine(tab);
         }
         catch (TabuleiroException e)
         {
