@@ -1,4 +1,5 @@
-﻿using Jx.tabuleiro;
+﻿using Jx;
+using Jx.tabuleiro;
 
 internal class Program
 {
@@ -8,6 +9,8 @@ internal class Program
         Posicao p;
         Tabuleiro tab = new Tabuleiro(8, 8); 
 
-        
+        Tela.imprimirTabuliro(tab);
+
+        Console.WriteLine(tab);
     }
 }
