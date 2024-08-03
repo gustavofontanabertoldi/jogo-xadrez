@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using Jx.tabuleiro;
+using Jx.jogoXad;
 
 namespace Jx
 {
     internal class Tela
     {
 
-        public static void imprimirTabuliro(Tabuleiro tab)
+        public static void imprimirTabuleiro(Tabuleiro tab)
         {
             for (int i = 0; i < tab.Linhas; i++)
             {
@@ -28,6 +29,14 @@ namespace Jx
             }
             Console.WriteLine("  a b c d e f g h");
         }
+        public static PosicaoXadrez lerPosicaoXadrez()
+        {
+            string  s = Console.ReadLine();
+            char Coluna = s[0];
+            int Linha = int.Parse(s[1] + "");
+            return new PosicaoXadrez(Coluna, Linha);
+        }
+
         public static void imprimirPeca(Peca peca)
         {
             if (peca.Cor == Cor.Branca)
