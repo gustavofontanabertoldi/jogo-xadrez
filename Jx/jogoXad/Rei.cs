@@ -1,7 +1,6 @@
 ﻿using Jx.tabuleiro;
 using System;
 using System.Collections.Generic;
-using Jx.tabuleiro;
 
 namespace Jx.jogoXad
 {
