@@ -25,6 +25,10 @@ namespace Jx.tabuleiro
         {
             qteMovimentos++;
         }
+        public void decrementarQteMovimentos()
+        {
+            qteMovimentos--;
+        }
 
         public bool existeMovimetosPossiveis()
         {

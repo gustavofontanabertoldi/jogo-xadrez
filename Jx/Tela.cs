@@ -33,12 +33,12 @@ namespace Jx
 
         public static void imprimirConjunto(HashSet <Peca> conjunto)
         {
-            Console.WriteLine("[");
+            Console.Write("[");
             foreach (Peca x in conjunto)
             {
                 Console.WriteLine(x + " ");
             }
-            Console.WriteLine("]");
+            Console.Write("]");
         }
 
         public static void imprimirTabuleiro(Tabuleiro tab)
